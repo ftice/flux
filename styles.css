@@ -1,0 +1,157 @@
+/* styles.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Public Sans', sans serif;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    display: flex;
+    background-color: #f4f4f4;
+    height: 100vh;
+}
+
+label {
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    height: 48px;
+    padding: 16px;
+    border: 1px solid #e4e4e4;
+    border-radius: 2px;
+}
+
+select {
+    width: 100%;
+    height: 48px;
+    padding-left: 16px;
+    border: 1px solid #e4e4e4;
+    border-radius: 2px;
+}
+
+button {
+    display: inline-flex;
+    height: 48px;
+    padding: 0px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #383838;
+    color: white;
+}
+
+button:hover {
+    background-color: #454545;
+    cursor: pointer;
+}
+button:active {
+    background-color: #525252;
+    cursor: pointer;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.menu {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    width: 512px;
+    height: 100vh;
+    border-right: 1px solid #e4e4e4;
+    padding: 24px;
+    gap: 24px;
+    font-size: 16px;
+    overflow-y: auto;
+}
+
+#heading {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.base-color, .color-mode, .scale, .swatches {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+#base-color {
+    width: 100%;
+    padding: 0px 2px;
+}
+
+#color-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+.color-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0 24px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+}
+
+.color-box:hover {
+    cursor: pointer;
+}
+
+.chart-container {
+    width: 100%;
+    margin-top: 16px;
+    border: 1px solid #e4e4e4;
+    border-radius: 2px;
+    /* height is controlled by JavaScript */
+}
+
+#curve-chart {
+    display: block;
+    margin: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+.hex-code {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.hex-code:hover {
+    text-decoration: underline;
+  }
+
+.notification {
+    position: fixed;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    background-color: #383838;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+  }
